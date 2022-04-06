@@ -1,0 +1,41 @@
+@use '../utils/' as utils;
+
+@include utils.desktop {
+  /* Nav bar */
+  header {
+    padding: 0 utils.$p-desktop;
+    & .nav {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  .hamburger-wrapper {
+    display: none;
+  }
+  .desktop-menu {
+    display: block;
+    & .menu-wrapper {
+      padding: 0;
+      margin: 0;
+      &__items {
+        display: inline;
+        margin-right: 1.5rem;
+        & a {
+          color: utils.$dark-grayish-violet;
+          font-size: 0.875rem;
+          font-weight: 600;
+        }
+        &#view-plans {
+          border: 2px solid utils.$very-dark-violet;
+          margin-right: 0;
+          width: 100%;
+          padding: 0.225rem 2rem;
+          padding: 0.625rem 2rem;
+          & a {
+            color: utils.$very-dark-violet;
+          }
+        }
+      }
+    }
+  }
+}

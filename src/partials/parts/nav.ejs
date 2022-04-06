@@ -1,0 +1,49 @@
+<nav class="nav">
+  <a href="/">
+    <img
+      src='<%= require("/src/images/logo.svg") %>'
+      alt="logo"
+      aria-hidden="true"
+    />
+  </a>
+  <div class="desktop-menu">
+    <ul class="menu-wrapper">
+      <li class="menu-wrapper__items">
+        <a href="#how-we-work">how we work</a>
+      </li>
+      <li class="menu-wrapper__items">
+        <a href="#blog">blog</a>
+      </li>
+      <li class="menu-wrapper__items">
+        <a href="#account">account</a>
+      </li>
+      <li id="view-plans" class="menu-wrapper__items">
+        <a href="#view-plans">view plans</a>
+      </li>
+    </ul>
+  </div>
+  <div class="hamburger-wrapper">
+    <img
+      id="hamburger-icon"
+      src='<%= require("/src/images/icon-hamburger.svg") %>'
+      alt="hamburger close"
+      aria-hidden="true"
+    />
+  </div>
+</nav>
+<div id="mobile-menu" class="menu hide">
+  <ul class="menu-wrapper">
+    <li class="menu-wrapper__items">
+      <a href="#how-we-work">how we work</a>
+    </li>
+    <li class="menu-wrapper__items">
+      <a href="#blog">blog</a>
+    </li>
+    <li class="menu-wrapper__items">
+      <a href="#account">account</a>
+    </li>
+    <li id="view-plans" class="menu-wrapper__items">
+      <a href="#view-plans">view plans</a>
+    </li>
+  </ul>
+</div>

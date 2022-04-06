@@ -1,0 +1,21 @@
+/* heading */
+
+.text-heading {
+  font-family: 'DM Serif Display';
+}
+
+.text-heading-white {
+  @extend .text-heading;
+  color: white;
+}
+
+/* body */
+
+.text-body {
+  font-family: Karla;
+}
+
+.text-body-white {
+  @extend .text-body;
+  color: white;
+}

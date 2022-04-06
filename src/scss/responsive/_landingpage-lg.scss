@@ -1,0 +1,121 @@
+@use '../utils/' as utils;
+
+@include utils.desktop {
+  /* Intro */
+  .intro {
+    flex-direction: row-reverse;
+    position: relative;
+    background-image: url('/src/images/bg-pattern-intro-right-desktop.svg');
+    background-position: top right;
+    margin-bottom: 18.75rem;
+
+    & img {
+      position: absolute;
+      right: utils.$p-desktop;
+      top: 7rem;
+      min-width: 30rem;
+      width: 40%;
+      height: auto;
+      content: url('/src/images/image-intro-desktop.jpg');
+      z-index: 1;
+    }
+
+    &-slogan {
+      background-image: linear-gradient(#fff, #fff);
+      background-repeat: no-repeat;
+      background-size: 10rem 1px;
+      background-position: left utils.$p-desktop top;
+      padding-left: utils.$p-desktop;
+      text-align: left;
+      margin-top: 7rem;
+      width: 100%;
+      padding-top: 0;
+      &__title {
+        width: 35%;
+        text-align: left;
+        font-size: 4.5rem;
+        line-height: 4rem;
+      }
+      &__message {
+        width: 40%;
+        max-width: 48%;
+        text-align: left;
+        margin-top: 2rem;
+      }
+    }
+    & .bg-img {
+      background-image: url('/src/images/bg-pattern-intro-left-desktop.svg');
+      left: 0;
+      bottom: -20.8rem;
+      padding: 15.75rem 6.09375rem;
+      position: absolute;
+    }
+  }
+  /*Features */
+  .features {
+    padding: 1rem utils.$p-desktop;
+    background-position: top left utils.$p-desktop;
+    & .container {
+      column-count: 3;
+    }
+    &-wrapper__title {
+      text-align: left;
+      margin-bottom: 1.5rem;
+      & h2 {
+        font-size: 4.5rem;
+      }
+    }
+    &-wrapper__box {
+      text-align: left;
+      align-items: flex-start;
+      & h3 {
+        margin-top: 2rem;
+      }
+      & p {
+        text-align: left;
+      }
+    }
+  }
+  /* Find out more */
+
+  .find-out-more {
+    margin: utils.$p-desktop;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    min-height: 15.75rem;
+    background-image: url('/src/images/bg-pattern-how-we-work-desktop.svg');
+
+    & h2 {
+      font-size: 3.5rem;
+      width: 60%;
+      text-align: left;
+    }
+  }
+  /* Footer */
+  footer {
+    padding-left: utils.$p-desktop;
+    padding-right: utils.$p-desktop;
+    background-color: utils.$very-light-gray;
+    background-image: url('/src/images/bg-pattern-footer-desktop.svg');
+    background-position: top left;
+  }
+  .footer-header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 2rem;
+  }
+  .footer-links {
+    column-count: 4;
+    padding-top: 1rem;
+    &__box {
+      text-align: left;
+      height: 100%;
+      & > div[class='links'] > a[href='#live-chat'] {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,69 @@
+@use '../utils/' as utils;
+
+.intro {
+  position: relative;
+  background-color: utils.$dark-violet;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  width: 100;
+  margin-bottom: 8.75rem;
+
+  &-image__wrapper {
+    width: 100vw;
+    text-align: center;
+  }
+
+  &-slogan {
+    @include utils.mobile {
+      background-image: url('/src/images/bg-pattern-intro-left-mobile.svg');
+    }
+    background-repeat: no-repeat;
+    background-position: top left;
+    text-align: center;
+    padding-top: 2.8rem;
+    padding-bottom: 5.9375rem;
+    padding-left: 1.375rem;
+    padding-right: 1.375rem;
+    pointer-events: stroke;
+
+    &__title {
+      font-size: 2.625rem;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 0;
+      line-height: 3.5rem;
+      @extend .text-heading-white;
+    }
+    &__message {
+      text-align: center;
+      line-height: 2rem;
+      font-size: 1.0625rem;
+      margin-top: 0;
+      margin-bottom: 0;
+      @extend .text-body-white;
+    }
+
+    &__view-plans {
+      margin-top: 1.5rem;
+      position: absolute;
+      @extend .button;
+      z-index: 2;
+      &:hover {
+        background-color: #fff;
+        color: utils.$very-dark-violet;
+      }
+    }
+  }
+  .bg-img {
+    @include utils.mobile {
+      background-image: url('/src/images/bg-pattern-intro-right-mobile.svg');
+      padding: 10.3125rem 3.875rem;
+    }
+    position: absolute;
+    right: 0;
+    background-repeat: no-repeat;
+    bottom: -10.9375rem;
+    z-index: 1;
+  }
+}

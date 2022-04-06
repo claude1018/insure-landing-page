@@ -1,0 +1,42 @@
+@use '../utils/' as utils;
+
+.features {
+  margin-top: 3rem;
+  background-image: linear-gradient(#d9d9d9, #d9d9d9);
+  background-repeat: no-repeat;
+  background-size: 12rem 2px;
+  background-position: top center;
+  padding-top: 2rem;
+
+  &-wrapper__title {
+    text-align: center;
+    h2 {
+      font-size: 2.625rem;
+      color: utils.$very-dark-violet;
+      @extend .text-heading;
+    }
+  }
+  &-wrapper__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.8rem;
+
+    h3 {
+      font-size: 1.75rem;
+      color: utils.$very-dark-violet;
+      margin-bottom: 0;
+      @extend .text-heading;
+    }
+
+    p {
+      margin-top: 0.875rem;
+      font-size: 1rem;
+      text-align: center;
+      color: utils.$dark-grayish-violet;
+      line-height: 2rem;
+      @extend .text-body;
+    }
+  }
+}
