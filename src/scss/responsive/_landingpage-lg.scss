@@ -42,6 +42,14 @@
         text-align: left;
         margin-top: 2rem;
       }
+      &__view-plans {
+        position: absolute;
+        z-index: 2;
+        &:hover {
+          background-color: #fff;
+          color: utils.$very-dark-violet;
+        }
+      }
     }
     & .bg-img {
       background-image: url('/src/images/bg-pattern-intro-left-desktop.svg');

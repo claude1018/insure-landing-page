@@ -46,13 +46,7 @@
 
     &__view-plans {
       margin-top: 1.5rem;
-      position: absolute;
       @extend .button;
-      z-index: 2;
-      &:hover {
-        background-color: #fff;
-        color: utils.$very-dark-violet;
-      }
     }
   }
   .bg-img {

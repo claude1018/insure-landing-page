@@ -1,5 +1,6 @@
 @use './colors' as colors;
 @use './typography' as font;
+@use './mixins' as media;
 
 html {
   box-sizing: border-box;
@@ -40,7 +41,11 @@ body {
   text-align: center;
   padding-top: 0.625rem;
   padding-bottom: 0.625rem;
-  font-size: 0.925rem;
+  font-size: 1rem;
+  @extend .text-body;
+  @include media.mobile {
+    font-size: 0.825rem;
+  }
   & a {
     color: colors.$very-dark-violet;
   }
