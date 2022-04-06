@@ -27,7 +27,7 @@ Users should be able to:
 
 <h2 align="center">Desktop[1440px]</h2>
 <div style="padding: 16px">
-<img src="./insure-desktop.png" alt='1440px view'>
+<img src="./insure-ss-desktop.png" alt='1440px view'>
 </div>
 
 ### Links
